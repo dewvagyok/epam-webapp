@@ -1,13 +1,20 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <title>Feladatkezelő app</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="container">
+      <h1>Teendőim</h1>
+      <div class="input-group">
+        <input type="text" id="task-input" placeholder="Új feladat...">
+        <button id="add-btn">Hozzáadás</button>
+      </div>
+      <ul id="task-list"></ul>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
