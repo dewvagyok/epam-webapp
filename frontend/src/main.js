@@ -15,7 +15,7 @@ async function fetchTasks() {
 
 async function deleteTask(id) {
   try {
-    // JAVÍTVA: Használj backtick-et (`)!
+
     await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
     fetchTasks();
   } catch (error) {
@@ -25,11 +25,11 @@ async function deleteTask(id) {
 
 async function toggleTask(task) {
   try {
-    // JAVÍTVA: A PATCH-nek el kell küldenie az új állapotot a body-ban
+
     await fetch(`${API_URL}/${task.id}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ completed: !task.completed }) // Megfordítjuk az állapotot
+      body: JSON.stringify({ completed: !task.completed })
     });
     fetchTasks();
   } catch (error) {
@@ -39,7 +39,7 @@ async function toggleTask(task) {
 
 function renderTasks(tasks) {
   const listElement = document.querySelector('#task-list');
-  if (!listElement) return; // Biztonsági ellenőrzés
+  if (!listElement) return;
   listElement.innerHTML = '';
 
   tasks.forEach(task => {
@@ -56,7 +56,6 @@ function renderTasks(tasks) {
       </div>
     `;
 
-    // JAVÍTVA: Itt átadjuk az egész task objektumot a toggleTask-nak
     li.querySelector('.done-btn').onclick = () => toggleTask(task);
     li.querySelector('.delete-btn').onclick = () => deleteTask(task.id);
 
@@ -64,7 +63,6 @@ function renderTasks(tasks) {
   });
 }
 
-// Kezdés
 fetchTasks();
 
 const input = document.querySelector('#task-input');
@@ -80,7 +78,6 @@ addBtn.onclick = async () => {
     await fetch(API_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      // JAVÍTVA: Érdemes alapértelmezett 'completed' értéket is küldeni
       body: JSON.stringify({ title: input.value, completed: false })
     });
 
