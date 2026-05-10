@@ -61,4 +61,8 @@ app.patch('/tasks/:id', (req, res) => {
     }
 });
 
-app.listen(3000, () => console.log('Server running on http://localhost:3000'));
+export default app;
+
+if (process.env.NODE_ENV !== 'test') {
+    app.listen(3000, () => console.log('Server running on http://localhost:3000'));
+}

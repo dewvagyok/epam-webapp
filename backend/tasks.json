@@ -8,5 +8,10 @@
     "id": 1778449760038,
     "title": "Elkészült feladat",
     "completed": true
+  },
+  {
+    "id": 1778452559682,
+    "title": "AI által tesztelt feladat",
+    "completed": false
   }
 ]
