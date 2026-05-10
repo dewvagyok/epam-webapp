@@ -141,6 +141,7 @@ A projekt fejlesztése során mesterséges intelligenciát vettünk igénybe a v
    
    - **Kód-optimalizálás:** Segítség a fájl alapú tárolás és az eseménykezelők refaktorálásában.
    - **Fejlesztői workflow:** Egygombos indítási script (`npm start`) összeállítása `concurrently` használatával.
+   - **Tesztelés:** Vitest unit tesztek és **Supertest** integrációs tesztek vázának kialakítása, tesztkörnyezet 		konfigurálása.
 
 -  **Főbb promptok:**
 
@@ -148,6 +149,7 @@ A projekt fejlesztése során mesterséges intelligenciát vettünk igénybe a v
 
    -  _"Segíts optimalizálni a frontend API hívásokat és az elemek animációit."_
    -  _"Hogyan tudom egyetlen paranccsal indítani a backendet és a frontendet is?"_
+   - _"Írj Vitest teszteket egy Express API végpontjainak tesztelésére szimulált hívásokkal."_
 
   
 
