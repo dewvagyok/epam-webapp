@@ -22,4 +22,25 @@ app.post('/tasks', (req, res) => {
     res.status(201).json(newTask);
 }); 
 
+app.delete('/tasks/:id', (req, res) => {
+    const { id } = req.params;
+    tasks = tasks.filter(t => t.id !== parseInt(id));
+    res.status(204).send();
+});
+
+app.patch('/tasks/:id', (req, res) => {
+    const { id } = req.params;
+    const task = tasks.find(t => t.id === parseInt(id));
+    if (task) {
+        task.completed = !task.completed;
+        res.json(task);
+    } else {
+        res.status(404).send();
+    }
+});
+
 app.listen(3000, () => console.log('Server running on http://localhost:3000'));
+
+app.get('/', (req, res) => {
+    res.send('A szerver fut, használd a /tasks végpontot!');
+});
