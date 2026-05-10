@@ -74,8 +74,12 @@ Ez egy letisztult, modern **Full-Stack** alkalmazás, amely az alapvető feladat
   
 
 ### 🚀 Indítás
+#### Gyors indítás
 
-  
+```
+npm start
+```
+---
 
 #### 1. Backend indítása
 
