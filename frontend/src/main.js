@@ -49,11 +49,11 @@ function renderTasks(tasks) {
     li.style.opacity = task.completed ? '0.6' : '1';
 
     li.innerHTML = `
-      <span>${task.title}</span>
-      <div class="actions">
-        <button class="done-btn">${task.completed ? 'Mégse' : 'Kész'}</button>
-        <button class="delete-btn">Törlés</button>
-      </div>
+    <span>${task.title}</span>
+    <div class="actions">
+      <button class="done-btn">${task.completed ? '↩️ Vissza' : '✅ Kész'}</button>
+      <button class="delete-btn">🗑️</button>
+    </div>
     `;
 
     li.querySelector('.done-btn').onclick = () => toggleTask(task);
