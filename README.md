@@ -1,49 +1,84 @@
-📝 Feladatkezelő Webalkalmazás
+# 📝 Feladatkezelő Webalkalmazás
+![App Screenshot](./screenshot.png)
+---
 
-Ez egy letisztult, modern Full-Stack alkalmazás, amely az alapvető feladatkezelési (CRUD) műveleteket valósítja meg. A projekt az ExpressJS backend és a Vite frontend erejét ötvözi.
-✨ Funkciók
+Ez egy letisztult, modern **Full-Stack** alkalmazás, amely az alapvető feladatkezelési (CRUD) műveleteket valósítja meg. A projekt az **ExpressJS** backend és a **Vite** frontend technológiákra épül.
 
-    Listázás: Teendők valós idejű lekérése a szerverről.
+---
 
-    Hozzáadás: Új feladatok azonnali rögzítése.
+### ✍️ Fejlesztők
+* Gubik Ádám - **FFSD4N** - adigubik@gmail.com
+* Tóth Dávid László - **E6GYUM** - tothdave14@gmail.com
+---
+### ✨ Főbb Funkciók
 
-    Állapot: Feladatok késznek jelölése (vizuális áthúzással).
+* **Listázás:** Teendők valós idejű lekérése a szerverről.
+* **Hozzáadás:** Új feladatok azonnali rögzítése és mentése.
+* **Állapot:** Feladatok késznek jelölése (vizuális áthúzással és állapotmentéssel).
+* **Törlés:** Már nem szükséges elemek végleges eltávolítása a rendszerből.
 
-    Törlés: Már nem szükséges elemek végleges eltávolítása.
+---
 
-🛠 Technológiai Stack
+### 🛠 Technológiai Stack
 
-    Backend: Node.js + Express (ESM modulok)
+* **Backend:** Node.js + Express (ESM modulok)
+* **Frontend:** Vite + Vanilla JavaScript
+* **Stílus:** Egyedi CSS3 (Sötét mód, modern kártya-UI)
+* **Adattárolás:** JSON alapú perzisztens fájltárolás (`tasks.json`)
 
-    Frontend: Vite + Vanilla JavaScript
+---
 
-    Stílus: Egyedi CSS3 (modern, reszponzív kártya-UI)
+### 📂 Projekt Felépítése
 
-    Tesztelés: Vitest (unit tesztek a logikához)
+* `backend/`: API végpontok, JSON alapú adattárolás és kiszolgáló logika.
+* `frontend/`: Felhasználói felület, modern stíluslapok (Sötét mód) és API kommunikáció.
 
-📂 Felépítés
+---
 
-    /backend: API végpontok, memória-alapú adattárolás és tesztek.
+### 🚀 Indítás
 
-    /frontend: Felhasználói felület, stíluslapok és API kommunikáció.
-
-🚀 Gyorsindítás
-1. Backend indítása
-Bash
-
+#### 1. Backend indítása
+```bash
 cd backend
 npm install
 node index.js
-
-2. Frontend indítása
-Bash
-
+```
+#### 2. Frontend indítása
+```
 cd frontend
 npm install
 npm run dev
+```
+----------
+### 🤝 Csapatmunka
 
-🤝 Csapatmunka
+A fejlesztés során a **Git** és a **GitHub** eszközeit használtuk a közös munka koordinálására. A commit history transzparensen tükrözi a moduláris fejlesztési folyamatot és a csapattagok hozzájárulását.
 
-A fejlesztés során a Git és a GitHub eszközeit használtuk a közös munka koordinálására. A commit history transzparensen tükrözi a moduláris fejlesztési folyamatot és a csapattagok hozzájárulását.
+----------
 
-Készült: 2026. május – Webalkalmazás-fejlesztés beadandó
+### 🤖 AI Nyilatkozat (CSS & Refactoring)
+
+A projekt fejlesztése során mesterséges intelligenciát vettünk igénybe a vizuális megjelenés és a kódtisztítás támogatására.
+
+-   **Modell:** Gemini 3 Flash
+    
+-   **Verzió:** Paid tier (Pro)
+
+-   **Dátum:** 2026. május 10.
+    
+-   **Alkalmazási területek:**
+    
+    -   **Vizuális stílus (CSS):** Sötét módú, Indigo színvilágú UI generálása és finomítása.
+        
+    -   **Kód-optimalizálás:** Segítség a fájl alapú tárolás és az eseménykezelők refaktorálásában.
+        
+-   **Főbb promptok:**
+    
+    -   _"Javasolj modern, sötét tónusú CSS színpalettát Indigo kiemelésekkel."_
+        
+    -   _"Segíts optimalizálni a frontend API hívásokat és az elemek animációit."_
+        
+
+----------
+
+_Készült: 2026. május – Webalkalmazás-fejlesztés beadandó_
